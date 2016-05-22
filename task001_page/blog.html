@@ -1,15 +1,210 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
-	<meta charset="utf8">
-	<title>作业1</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!-- 优先使用IE最新版本和 Chrome -->
-	<!-- width=device-width 会导致 iPhone 5 添加到主屏后以 WebAPP 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<meta name="format-detection" content="telephone=no" /> <!-- 屏蔽数字自动识别为电话号码 -->
-	<link rel="stylesheet" href="./css/reset.css" />
+    <meta charset="utf8">
+    <title>index</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!-- 优先使用IE最新版本和 Chrome -->
+    <!-- width=device-width 会导致 iPhone 5 添加到主屏后以 WebAPP 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no" /> <!-- 屏蔽数字自动识别为电话号码 -->
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
-<body>
+<style>
+    html {font: normal 12px/1.5 tahoma, arial, "hiragino sans gb", simsun, sans-serif; background: #fff;}
+    body, p, h2, h3{margin: 0; padding: 0;}
+    ul {list-style: none; margin: 0; padding: 0;}
+    a {text-decoration: none;}
+    .clrfix {zoom:1;}
+    .clrfix:before, .clrfix:after {content: "";display: block;}
+    .clrfix:after {clear: both;}
+    .inline-block {_display: inline; *zoom: 1; display: inline-block; vertical-align: middle;}
+    .fl {float: left;} .fr {float: right;}
+    .bk {
+        width: 1200px;
+        padding: 0; margin: 0 auto;
+        background-color: #eee;
+    }
+    .mn {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .p {
+        text-indent: 2rem;
+        margin: 0;
+    }
+
+
+    /* body */
+    .blog-body{
+        font: normal 14px/1.5 tahoma, arial, "hiragino sans gb", simsun, sans-serif;
+        padding-top: 10px;
+    }
+    .blog-blk {
+        background: #fff; padding: 10px; margin-bottom: 10px;
+    }
+    .blogs {
+        float: left; margin-right: 10px;
+        width: 700px;
+    }
+    .assist {
+        float: left;
+        width: 270px;
+
+    }
+
+    /* art list */
+    .blogs>ul>li {
+        position: relative;
+    }
+    .blogs .article-label {
+        position: absolute; left: -80px; top: 40px;
+        width: 80px; line-height: 30px;
+        text-align: center; color: #fff;
+    }
+    .blogs .l-date {
+        background: #522A5C; height: 30px;
+    }
+    .blogs .l-label {
+        background: #A660B7; height:30px;
+    }
+    .blogs article h2 {
+        color: #A660B7; font-size: 16px;
+    }
+    .blogs article h3 {
+        color: #aaa; font-size: 12px;
+    }
+    .blogs article .endnote {
+        color: #ddd; text-align: right;
+    }
+
+    /* keyword search */
+    .assist .search {
+        padding: 20px;
+    }
+    .assist .input-ctn {
+        border: 1px solid #eee;
+        height: 40px; line-height: 40px;
+    }
+    .assist .input-ctn .glass {
+        width: 30px; height: 30px;
+        background: #000;
+    }
+    .assist .input-ctn input{
+        width: 120px;
+        border: 0 none; outline: 0;
+    }
+    .assist .input-ctn .go {
+        float: right;
+        height: 100%; padding: 0 10px;
+        background: #eee; color: #fff;
+        border: 0 none;
+    }
+
+    /* labels */
+    .s-labels {
+        border-top: 1px solid #ddd; padding: 0;
+    }
+    .s-labels li {
+        height: 40px; line-height: 40px;
+        padding-left: 20px;
+        border-bottom: 1px solid #ddd;
+        border-left: 5px solid #DFC6E6;
+    }
+    .s-labels li.selected {
+        border-left-color: #A660B7;
+    }
+    .s-labels li a{
+        color: #555;
+    }
+    .s-tags{
+        color: #522A5C;
+    }
+    .s-tags .title {
+        padding: 10px 5px;
+    }
+    .s-tags .s-tag-body {
+        padding: 0 5px;
+    }
+</style>
+<body class="bk">
+
+<!-- 正文 -->
+<div class="blog-body mn clrfix">
+    <div class="blogs">
+        <ul>
+            <li>
+                <div class="article-label">
+                    <div class="l-date">4.12</div>
+                    <div class="l-label">CSS</div>
+                </div>
+                <article class="blog-blk">
+                    <h2>文章标题，16px</h2>
+                    <h3>文章副标题，12px,#666</h3>
+                    <div class="article-body">
+                        <p class="p">这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
+                        <p class="p">这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
+                    </div>
+                    <section class="endnote">
+                        YOUR NAME 发表于 2015年4月12日
+                    </section>
+                </article>
+            </li>
+            <li>
+                <div class="article-label">
+                    <div class="l-date">4.12</div>
+                    <div class="l-label">CSS</div>
+                </div>
+                <article class="blog-blk">
+                    <h2>文章标题，16px</h2>
+                    <h3>文章副标题，12px,#666</h3>
+                    <div class="article-body">
+                        <p class="p">这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
+                        <p class="p">这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，这里是正文，</p>
+                    </div>
+                    <section class="endnote">
+                        YOUR NAME 发表于 2015年4月12日
+                    </section>
+                </article>
+            </li>
+        </ul>
+    </div>
+    <aside class="assist">
+        <div class="search blog-blk">
+            <div class="input-ctn">
+                <div class="glass inline-block"></div>
+                <input type="text inline-block" placeholder="Keywords">
+                <button type="button inline-block" class="go">GO</button>
+            </div>
+        </div>
+        <div class="s-labels blog-blk">
+            <ul>
+                <li><a href="javascript:void(0)">HTML</a></li>
+                <li class="selected"><a href="javascript:void(0)">CSS</a></li>
+                <li><a href="javascript:void(0)">Javascript</a></li>
+                <li><a href="javascript:void(0)">其它文章</a></li>
+            </ul>
+        </div>
+        <div class="s-calendar blog-blk"></div>
+        <div class="s-tags blog-blk">
+            <div class="title">Tags</div>
+            <div class="s-tag-body">
+                <span style="font-size: 20px">JavaScript</span>
+                <span style="font-size: 18px">CSS</span>
+                <span style="font-size: 14px">flex</span>
+                <span style="font-size: 16px">WebGL</span>
+                <span style="font-size: 22px">HTML</span>
+                <span style="font-size: 14px">Canvas</span>
+                <span style="font-size: 14px">prototype</span>
+                <span style="font-size: 18px">HTML5</span>
+                <span style="font-size: 12px">grid</span>
+                <span style="font-size: 14px">nodeJS</span>
+                <span style="font-size: 14px">CSS3</span>
+                <span style="font-size: 16px">jQuery</span>
+                <span style="font-size: 18px">ECharts</span>
+            </div>
+        </div>
+    </aside>
+</div>
 
 </body>
 </html>
