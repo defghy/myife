@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="utf8">
+	<title>index</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!-- 优先使用IE最新版本和 Chrome -->
+	<!-- width=device-width 会导致 iPhone 5 添加到主屏后以 WebAPP 全屏模式打开页面时出现黑边 http://bigc.at/ios-webapp-viewport-meta.orz -->
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" /> <!-- 屏蔽数字自动识别为电话号码 -->
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+<style>
+    .carouselContainer {
+        width: 100px; height: 100px; position: relative;
+        overflow: hidden;
+    }
+    .carouselContainer>ul {
+        margin: 0; padding: 0;
+        width: 400px; height: 100px; position: absolute;
+        font-size: 0px;
+    }
+    .carouse {
+        font-size: 16px;
+        display: inline-block; width: 100px; height: 100px;
+    }
+</style>
+
+
+<body>
+
+
+<div id="carouselContainer" class="carouselContainer">
+    <ul>
+        <li class="carouse" style="background:#000">1</li>
+        <li class="carouse" style="background:#0F0">2</li>
+        <li class="carouse" style="background:#00F">3</li>
+        <li class="carouse" style="background:#F00">4</li>
+    </ul>
+</div>
+<div id="carouselBtn">
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button">4</button>
+</div>
+
+</body>
+
+<script src="./cloneObject.js"></script>
+
+</html>
