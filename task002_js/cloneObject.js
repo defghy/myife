@@ -1,3 +1,9 @@
+import styles from "./index.css";
+
+console.log(styles);
+
+export const a = 1;
+
 var getType = function(obj) {
     if(obj == null) {
         return obj+ "";
